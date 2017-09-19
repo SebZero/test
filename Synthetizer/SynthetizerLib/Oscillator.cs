@@ -16,7 +16,8 @@ namespace SynthetizerLib
         Sawtooth,
         Silent,
         Triangle,
-        Bass
+        Bass,
+        Test
     }
 
     [Serializable]
@@ -138,7 +139,7 @@ namespace SynthetizerLib
             // Fill the buffer with whatever waveform at the specified frequency 
             double durationInSeconds = Duration / 1000.0f;
 
-            int numSamples = Convert.ToInt32((double)(durationInSeconds * (double)SamplePerSecond * (double)ChannelCount));
+            int numSamples = Convert.ToInt32((durationInSeconds * SamplePerSecond * ChannelCount));
             short[] data = new short[numSamples];
 
             double angle = (Math.PI * 2 * Frequency) / (SamplePerSecond * ChannelCount);
@@ -155,8 +156,11 @@ namespace SynthetizerLib
                 case WaveType.Sine:
                     {
                         for (int i = 0; i < numSamples; i++)
+                        {
+                            short val = Convert.ToInt16(Amplitude * Math.Sin(angle * i));
+                            data[i] = val;
+                        }
                             // Generate a sine wave in both channels.
-                            data[i] = Convert.ToInt16(Amplitude * Math.Sin(angle * i));
                     }
                     break;
                 case WaveType.Square:
@@ -201,7 +205,44 @@ namespace SynthetizerLib
                         }
                     }
                     break;
+                case WaveType.Test:
+                    {
 
+                        int signifiantNumSample = numSamples - 2000;
+                        int index = 0;
+                        short val = 0;
+                        //for (int i = 0; i < 1000; i++)
+                        //{
+                        //    data[index++] = val;
+                        //    data[index++] = val;
+                        //    val+=1;
+                        //}
+
+                        for (int i = 0; i < numSamples / (int)Frequency; i++)
+                        {
+                            val = Convert.ToInt16(Frequency);
+                            for (int j = 0; j < ((int)Frequency); j ++)
+                            {
+                                data[index++] = val;
+                                val += 1;
+                            }
+                        }
+                        val = Convert.ToInt16(Frequency);
+                        //val = (short)((int)(numSamples - index) / 5);
+                        for (int i = index; i < (numSamples); i++)
+                        {
+                            data[index++] = val;
+                            //if (val > 4)
+                            val += 1;
+                        }
+
+                        for (int i = 0; i < numSamples; i++)
+                        {
+                            data[i] -= 400;
+                        }
+                    }
+
+                    break;
                 case WaveType.Bass:
                     {
                         int amp = (Amplitude - (Amplitude / 2));

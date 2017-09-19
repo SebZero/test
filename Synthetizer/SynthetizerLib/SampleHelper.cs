@@ -70,9 +70,9 @@ namespace SynthetizerLib
             AudioChunk chunk = new AudioChunk();
 
             chunk.AddOscillator(WaveType.Sine, duration, frequency, amplitude, channelCount);
-            chunk.AddOscillator(WaveType.Sawtooth, duration, frequency, amplitude /3, channelCount);
-            chunk.AddOscillator(WaveType.Square, duration, frequency, amplitude / 3, channelCount);
-            chunk.AddOscillator(WaveType.Square, duration, frequency /2, -amplitude, channelCount);
+            //chunk.AddOscillator(WaveType.Sawtooth, duration, frequency, amplitude /3, channelCount);
+            //chunk.AddOscillator(WaveType.Square, duration, frequency, amplitude / 3, channelCount);
+            //chunk.AddOscillator(WaveType.Square, duration, frequency /2, -amplitude, channelCount);
 
 
             return chunk;

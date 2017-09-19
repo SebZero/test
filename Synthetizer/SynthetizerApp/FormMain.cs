@@ -48,7 +48,7 @@ namespace SynthetizerApp
             if (durationBefore > 0)
                 streamWriter.WriteSilenceChunk(durationBefore);
 
-            streamWriter.WriteChunk(SampleHelper.MakeBassChunk2(duration, tone.Frequency / 2, amplitude, 2));
+            streamWriter.WriteChunk(SampleHelper.MakeBassChunk2(duration, tone.Frequency, amplitude, 2));
             //streamWriter.WriteOscillator(new Oscillator(WaveType.Sine, duration, tone.Frequency, amplitude, 2));
         }
 
@@ -122,7 +122,11 @@ namespace SynthetizerApp
                 ////}
 
                 if (chunk.Oscillators.Count > 0)
+                {
                     streamWriter.WriteChunk(chunk);
+                    streamWriter.WriteChunk(chunk);
+                    streamWriter.WriteChunk(chunk);
+                }
 
                 streamWriter.Close();
 
