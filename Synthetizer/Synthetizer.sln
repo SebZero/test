@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynthetizerLib", "SynthetizerLib\SynthetizerLib.csproj", "{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynthetizerUI", "SynthetizerUI\SynthetizerUI.csproj", "{D58B2E70-3F93-4409-890E-7E450FCB7F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynthetizerApp", "SynthetizerApp\SynthetizerApp.csproj", "{42BB19F6-9417-4FCF-A02E-3B69564EA335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCustomControls", "BasicCustomControls\BasicCustomControls.csproj", "{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41AC2B5C-E3BB-4F98-855D-7BAF34DFCC71}.Release|x64.ActiveCfg = Release|Any CPU
+		{D58B2E70-3F93-4409-890E-7E450FCB7F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58B2E70-3F93-4409-890E-7E450FCB7F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58B2E70-3F93-4409-890E-7E450FCB7F70}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D58B2E70-3F93-4409-890E-7E450FCB7F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58B2E70-3F93-4409-890E-7E450FCB7F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58B2E70-3F93-4409-890E-7E450FCB7F70}.Release|x64.ActiveCfg = Release|Any CPU
+		{42BB19F6-9417-4FCF-A02E-3B69564EA335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BB19F6-9417-4FCF-A02E-3B69564EA335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BB19F6-9417-4FCF-A02E-3B69564EA335}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{42BB19F6-9417-4FCF-A02E-3B69564EA335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BB19F6-9417-4FCF-A02E-3B69564EA335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BB19F6-9417-4FCF-A02E-3B69564EA335}.Release|x64.ActiveCfg = Release|Any CPU
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Debug|x64.ActiveCfg = Debug|x64
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Debug|x64.Build.0 = Debug|x64
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Release|x64.ActiveCfg = Release|x64
+		{955BB8F3-DC3B-468F-B2D2-E0C1DEE1494B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
